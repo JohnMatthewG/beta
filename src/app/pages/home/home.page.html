@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Lifegiver 
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <form>
+      <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="text" [(ngModel)]="email" name="email"></ion-input>
+    </ion-item>
+
+     <ion-item>
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="password" [(ngModel)]="pass" name="pass"></ion-input>
+    </ion-item>  
+  </form>
+
+	<ion-button expand="full" (click)="login()" item-left>Login</ion-button>
+	<ion-button expand="full" (click)="signup()" item-left>Sign Up</ion-button>
+
+</ion-content>
